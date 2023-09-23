@@ -9,9 +9,9 @@ const Hotels = () => {
 
 
     return (
-        <section>
-            <div class="card-group">
-                hotels
+        <section className='contaier'>
+            <h3 className='text-secondary'>Pupuler Hotels</h3>
+            <div class="card-group row gx-5">
                 {
                     hotels.map(hotel => <Hotel key={hotel.id} hotel={hotel}></Hotel>)
                 }
