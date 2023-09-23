@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "ENGINE DIAGNOSTIC",
+        "price": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/sJ5zChB/the-anam-twi-Ic-Isp2s-unsplash.jpg"
+    },
+    {
+        "id": 2,
+        "name": "WHEEL ALIGNMENT",
+        "price": "100",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/Jx2bLqF/sasha-kaunas-TAg-GZWz6-Qg8-unsplash.jpg"
+    },
+    {
+        "id": 3,
+        "name": "OIL CHANGING",
+        "price": "150",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/MVCCz5j/toni-osmundson-XHBCq-ZGZre0-unsplash.jpg"
+    },
+    {
+        "id": 4,
+        "name": "BRAKE REPARING",
+        "price": "180",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/2W6FXx8/ibrahim-boran-a-BNPslolm-JM-unsplash.jpg"
+    },
+    {
+        "id": 5,
+        "name": "WASH AND GLASSING",
+        "price": "100",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/B63W5zx/gabriel-alenius-l-Trbj-Fd8-Iwo-unsplash.jpg"
+    },
+    {
+        "id": 6,
+        "name": "COMPLETE ANALYSIS",
+        "price": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/98096jk/yuliya-pankevich-oyxs-G2-Lh-u-A-unsplash.jpg"
+    },
+    {
+        "id": 7,
+        "name": "COMPLETE ANALYSIS",
+        "price": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/c127Ddg/orva-studio-YC8qqp50-Bd-A-unsplash.jpg"
+    },
+    {
+        "id": 8,
+        "name": "COMPLETE ANALYSIS",
+        "price": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/GxxWJGZ/roberto-nickson-emqn-SQw-QQDo-unsplash.jpg"
+    },
+    {
+        "id": 9,
+        "name": "COMPLETE ANALYSIS",
+        "price": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/Qb3RhWg/linus-mimietz-p3-UWyaujt-Qo-unsplash.jpg"
+    },
+    {
+        "id": 10,
+        "name": "COMPLETE ANALYSIS",
+        "price": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/wYQMGSM/frames-for-your-heart-Fqqi-Av-Jejto-unsplash.jpg"
+    }
+]
