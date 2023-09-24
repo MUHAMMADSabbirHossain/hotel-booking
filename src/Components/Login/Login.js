@@ -1,11 +1,27 @@
 import React from 'react';
+import "./Login.css";
 import { Button, Form } from 'react-bootstrap';
 
+import auth from "../../firebase.init";
+
 const Login = () => {
+
+
+
+
+    const handleFormSubmit = event => {
+        event.preventDefault();
+    };
+
+
     return (
+
+
         <div md="w-25" className='container w-50'>
+
             <h2 className='text-secondary'>Please Login</h2>
-            <Form>
+
+            <Form onSubmit={handleFormSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label className=''>Email address</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" />
@@ -25,6 +41,7 @@ const Login = () => {
                     Submit
                 </Button>
             </Form>
+
         </div>
     );
 };
