@@ -3,12 +3,12 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Components/Footer/Footer';
-import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Login from './Components/Login/Login';
 import NotFound from './Components/NotFound/NotFound';
 import Register from './Components/Register/Register';
+import NavBar from './Components/NavBar/NavBar';
 
 function App() {
   return (
@@ -29,8 +29,8 @@ function App() {
       </header> */}
 
 
-      {/* header section */}
-      <Header></Header>
+      {/* navbar */}
+      <NavBar></NavBar>
 
 
       {/* react route */}
