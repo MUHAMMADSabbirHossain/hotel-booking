@@ -7,13 +7,14 @@ const Hotels = () => {
     const [hotels, setHotels] = useHotels();
     // console.log(hotels);
 
-
+    const homeHotels = hotels.filter(hotel => hotel.id < 7);
+    console.log(homeHotels);
     return (
         <section className='contaier'>
-            <h3 className='text-secondary'>Pupuler Hotels</h3>
-            <div class="card-group row gx-5">
+            <h3 className='text-secondary'>Pupuler Booking Hotels</h3>
+            <div className="card-group row gx-5">
                 {
-                    hotels.map(hotel => <Hotel key={hotel.id} hotel={hotel}></Hotel>)
+                    homeHotels.map(hotel => <Hotel key={hotel.id} hotel={hotel}></Hotel>)
                 }
             </div>
         </section>
