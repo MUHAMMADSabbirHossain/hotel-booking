@@ -1,40 +1,37 @@
 import React, { useRef } from 'react';
-import "./Login.css";
+import "./Register.css";
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import auth from "../../firebase.init";
 import { Link } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 
 
-const Login = () => {
+const Register = () => {
 
 
     const emailRef = useRef();
     const passwordRef = useRef();
 
+    const [createUserWithEmailAndPassword, user, loading, error,] = useCreateUserWithEmailAndPassword(auth);
 
-    const [signInWithEmailAndPassword, user, loading, error,] = useSignInWithEmailAndPassword(auth);
 
-
-    const handleFormLogin = event => {
+    const handleFormRegister = event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
         console.log(email, password);
 
-        signInWithEmailAndPassword(auth, email, password);
+        createUserWithEmailAndPassword(email, password);
+
     };
 
 
-
     return (
-
-
         <div md="w-25" className='container w-50'>
 
-            <h2 className='text-secondary'>Please Login</h2>
+            <h2 className='text-secondary'>Please Register</h2>
 
-            <Form onSubmit={handleFormLogin}>
+            <Form onSubmit={handleFormRegister}>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label className=''>Email address</Form.Label>
@@ -52,10 +49,9 @@ const Login = () => {
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group> */}
 
-                <p>Don't have any Account? <Link className='text-warning text-decoration-none' to="/register">Register Now.</Link></p>
+                <p>Already have any Account? <Link className='text-warning text-decoration-none' to="/login">Login Now.</Link></p>
 
-                <Button variant="primary" type="submit">Login</Button>
-
+                <Button variant="primary" type="submit">Register</Button>
             </Form>
 
 
@@ -63,4 +59,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Register;
