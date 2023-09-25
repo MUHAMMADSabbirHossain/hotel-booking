@@ -1,11 +1,12 @@
 import React from 'react';
 import "./NavBar.css";
 import { Button, Container, Form, Nav, NavDropdown, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
         <nav>
-            <Navbar expand="lg" className="bg-body-tertiary">
+            <Navbar sticky="top" expand="lg" className="bg-body-tertiary">
                 <Container fluid>
                     <Navbar.Brand href="#">Hotel-Booking</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
@@ -38,8 +39,9 @@ const NavBar = () => {
                                 className="me-2"
                                 aria-label="Search"
                             />
-                            <Button className="me-2" variant="outline-success">Search</Button>
-                            <Button variant="outline-success">Login</Button>
+                            <Button className="me-2" variant="outline-primary">Search</Button>
+
+                            <Link to="/login"><Button variant="outline-primary">Login</Button></Link>
                         </Form>
                     </Navbar.Collapse>
                 </Container>
