@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import "./Login.css";
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useUpdatePassword } from 'react-firebase-hooks/auth';
 import auth from "../../firebase.init";
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -13,10 +13,14 @@ const Login = () => {
     const passwordRef = useRef();
     const navigate = useNavigate();
     const [signInWithEmailAndPassword, user, loading, error,] = useSignInWithEmailAndPassword(auth);
+    const [sendPasswordResetEmail, sending, resetPasswordEerror] = useSendPasswordResetEmail(auth);
+
+
 
     if (user) {
         navigate("/");
     }
+
 
 
     const handleFormLogin = event => {
@@ -58,10 +62,12 @@ const Login = () => {
                 </Form.Group> */}
 
                 {
-                    error ? <p className='text-danger'>{error.message}</p> : ""
+                    error || resetPasswordEerror ? <p className='text-danger'>{error.message}</p> : ""
                 }
 
                 <p>Don't have any Account? <Link className='text-warning text-decoration-none' to="/register">Register Now.</Link></p>
+
+                <p>Forget your passwerd? <Link onClick={() => sendPasswordResetEmail(emailRef.current.value)} className='text-warning text-decoration-none'>Reset Here.</Link></p>
 
                 <Button variant="primary" type="submit">Login</Button>
 

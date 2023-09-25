@@ -40,6 +40,11 @@ const NavBar = () => {
                             </Nav.Link>
                         </Nav>
                         <Form className="d-flex">
+                            {
+                                user ? <Link to="/userprofile"><Button className="me-2" variant="outline-secondary border-0">{user.email}</Button></Link>
+                                    : ""
+                            }
+
                             <Form.Control
                                 type="search"
                                 placeholder="Search"
@@ -49,7 +54,7 @@ const NavBar = () => {
                             <Button className="me-2" variant="outline-primary">Search</Button>
 
                             {
-                                user ? <Link to="/login"><Button onClick={() => signOut()} variant="outline-primary">{user.email}SignOut</Button></Link>
+                                user ? <Link to="/login"><Button onClick={() => signOut()} variant="outline-primary">SignOut</Button></Link>
                                     :
                                     <Link to="/login"><Button variant="outline-primary">Login</Button></Link>
                             }
