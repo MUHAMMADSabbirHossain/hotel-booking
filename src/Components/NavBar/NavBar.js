@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
-        <nav>
-            <Navbar sticky="top" expand="lg" className="bg-body-tertiary">
+        <nav className='mb-5'>
+            <Navbar expand="lg" data-bs-theme="dark" className="bg-body-tertiary fixed-top">
                 <Container fluid>
-                    <Navbar.Brand href="#">Hotel-Booking</Navbar.Brand>
+                    <Navbar.Brand href="#" className='text-primary fw-semibold'>Hotel-Booking</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
