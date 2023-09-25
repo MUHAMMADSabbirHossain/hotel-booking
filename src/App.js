@@ -9,6 +9,8 @@ import Login from './Components/Login/Login';
 import NotFound from './Components/NotFound/NotFound';
 import Register from './Components/Register/Register';
 import NavBar from './Components/NavBar/NavBar';
+import Hotels from './Components/Hotels/Hotels';
+import AllHotels from './Components/AllHotels/AllHotels';
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
       {/* react route */}
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/home" element={<Home></Home>}></Route>
+        <Route path="/allhotels" element={<AllHotels></AllHotels>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>

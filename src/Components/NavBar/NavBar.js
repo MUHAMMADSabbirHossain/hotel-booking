@@ -15,7 +15,7 @@ const NavBar = () => {
         <nav className='mb-5 pb-5'>
             <Navbar expand="lg" data-bs-theme="dark" className="bg-body-tertiary fixed-top">
                 <Container fluid>
-                    <Navbar.Brand href="#" className='text-primary fw-semibold'>Hotel-Booking</Navbar.Brand>
+                    <Navbar.Brand href="#" className='text-primary fw-semibold'><Link className='text-decoration-none' to="/" >Hotel-Booking</Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
@@ -23,7 +23,7 @@ const NavBar = () => {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-                            <Nav.Link href="#action1">Home</Nav.Link>
+                            <Nav.Link href="#action1"><Link className='text-decoration-none text-white' to="/allhotels" >Hotels</Link></Nav.Link>
                             <Nav.Link href="#action2">Link</Nav.Link>
                             <NavDropdown title="Link" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="#action3">Action</NavDropdown.Item>

@@ -15,9 +15,9 @@ const Register = () => {
 
     const [createUserWithEmailAndPassword, user, loading, error,] = useCreateUserWithEmailAndPassword(auth);
 
-    // if (user) {
-    //     navigate("/");
-    // }
+    if (user) {
+        navigate("/");
+    }
 
 
     const handleFormRegister = event => {
