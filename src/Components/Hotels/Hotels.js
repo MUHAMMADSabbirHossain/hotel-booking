@@ -11,7 +11,7 @@ const Hotels = () => {
     console.log(homeHotels);
     return (
         <section className='contaier'>
-            <h3 className='text-secondary my-5'>Pupuler Booking Hotels</h3>
+            <h3 className='text-secondary my-5'>Populer Booking Hotels</h3>
             <div className="card-group row g-5">
                 {
                     homeHotels.map(hotel => <Hotel key={hotel.id} hotel={hotel}></Hotel>)

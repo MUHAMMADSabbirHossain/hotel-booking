@@ -15,7 +15,7 @@ const Home = () => {
             {/* header section */}
             <Header></Header>
 
-
+            {/* hotels section */}
             <Hotels></Hotels>
         </div>
     );

@@ -20,9 +20,11 @@ const Login = () => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        console.log(email, password);
+        console.log(typeof (email), password);
 
-        signInWithEmailAndPassword(auth, email, password);
+        signInWithEmailAndPassword(email, password);
+        console.log(typeof (email), password);
+
     };
 
 
@@ -30,15 +32,15 @@ const Login = () => {
     return (
 
 
-        <div md="w-25" className='container w-50'>
+        <div className='container col-12 col-sm-10 col-md-4 col-lg-3 col-xl-3 col-xxl-2' >
 
-            <h2 className='text-secondary'>Please Login</h2>
+            <h2 className='text-secondary fw-bold'>Please Login</h2>
 
             <Form onSubmit={handleFormLogin}>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label className=''>Email address</Form.Label>
-                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" />
+                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
                     <Form.Text className="text-muted">
                         We'll never share your email with anyone else.
                     </Form.Text>
@@ -51,6 +53,10 @@ const Login = () => {
                 {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group> */}
+
+                {
+                    error ? <p className='text-danger'>{error.message}</p> : ""
+                }
 
                 <p>Don't have any Account? <Link className='text-warning text-decoration-none' to="/register">Register Now.</Link></p>
 
