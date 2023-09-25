@@ -9,6 +9,7 @@ const NavBar = () => {
 
     const [user, authLoading, authError] = useAuthState(auth);
     const [signOut, signOutLoading, signOutError] = useSignOut(auth);
+    console.log(user?.email);
 
     return (
         <nav className='mb-5 pb-5'>
@@ -48,7 +49,7 @@ const NavBar = () => {
                             <Button className="me-2" variant="outline-primary">Search</Button>
 
                             {
-                                user ? <Link to="/login"><Button onClick={() => signOut()} variant="outline-primary">SignOut</Button></Link>
+                                user ? <Link to="/login"><Button onClick={() => signOut()} variant="outline-primary">{user.email}SignOut</Button></Link>
                                     :
                                     <Link to="/login"><Button variant="outline-primary">Login</Button></Link>
                             }
